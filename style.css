@@ -1,0 +1,133 @@
+:root {
+  --pink: #f7c8d0;
+  --brown: #7b4b3a;
+  --cream: #fff8f3;
+  --text: #3e2723;
+  --accent: #ff7b9c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+}
+
+/* NAVBAR */
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 10px 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+  flex-wrap: wrap;
+}
+
+.hero img {
+  width: 280px;
+  border-radius: 20px;
+}
+
+/* BUTTON */
+.btn {
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--brown);
+  color: white;
+}
+
+.btn-outline {
+  border: 2px solid var(--brown);
+  color: var(--brown);
+}
+
+/* PROJECT */
+.projects-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.project {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-pill {
+  background: var(--pink);
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+/* CONTACT */
+.contact-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+/* SOCIAL */
+.social-links {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.social-links a {
+  font-size: 24px;
+  margin: 10px;
+}
